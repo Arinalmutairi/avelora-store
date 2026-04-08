@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <header>
+<div class="logo">☕ قهوة رينا</div>
+<button onclick="openLogin()">تسجيل الدخول</button>
+</header>
+
+<button class="home-btn" onclick="goHome()">🏠 الرئيسية</button>
+
+<div class="search-box">
+<input placeholder="ابحث عن منتج">
+</div>
+
+<div class="icons">
+<button onclick="openFav()">❤️ المفضلة</button>
+<button onclick="openCart()">🛒 السلة</button>
+</div>
+
+<div class="title">منتجاتنا</div>
+
+<section class="products">
+
+<div class="product">
+<img src="https://drive.google.com/thumbnail?id=1DEi0T47TVwtInMhlX-cbe6_RdDnv8Gis">
+<h3>بن القهوة</h3>
+<button onclick="showPrice('43 ريال')">السعر</button>
+</div>
+
+<div class="product">
+<img src="https://drive.google.com/thumbnail?id=1Xl4qbiXd9uu_hmqJZwwIdrFXcIDnopgB">
+<h3>مطحنة</h3>
+<button onclick="showPrice('55 ريال')">السعر</button>
+</div>
+
+<div class="product">
+<img src="https://drive.google.com/thumbnail?id=1Z838g7Yy-SuXrWGPO7nn2EHz_V8FEsK3">
+<h3>ميزان القهوة</h3>
+<button onclick="showPrice('50 ريال')">السعر</button>
+</div>
+
+<div class="product">
+<img src="https://drive.google.com/thumbnail?id=1wz8Q3FRQyQ0sxl-dgsEJY5Vvmuw5GGTO">
+<h3>سيرفر القهوة</h3>
+<button onclick="showPrice('50 ريال')">السعر</button>
+</div>
+
+<div class="product">
+<img src="https://drive.google.com/thumbnail?id=12fTfroK8zhpjcKTAtoBgjMB8t9zgxo05">
+<h3>قمع</h3>
+<button onclick="showPrice('30 ريال')">السعر</button>
+</div>
+
+<div class="product">
+<img src="https://drive.google.com/thumbnail?id=1aIm_B6xRI-W-Fkrg1XBN3mKnydZPy3PC">
+<h3>فلتر</h3>
+<button onclick="showPrice('22 ريال')">السعر</button>
+</div>
+
+</section>
+
+<div class="modal" id="login">
+<div class="modal-content">
+<h3>تسجيل الدخول</h3>
+<input placeholder="البريد">
+<input placeholder="كلمة المرور">
+<button>دخول</button>
+<button onclick="closeModal()">إغلاق</button>
+</div>
+</div>
+
+<div class="modal" id="price">
+<div class="modal-content">
+<h3 id="priceText"></h3>
+<button onclick="closeModal()">إغلاق</button>
+</div>
+</div>
+
+<div class="modal" id="cart">
+<div class="modal-content">
+<h3>السلة</h3>
+<div id="cartItems"></div>
+</div>
+</div>
+
+<div class="modal" id="fav">
+<div class="modal-content">
+<h3>المفضلة</h3>
+<div id="favItems"></div>
+</div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
